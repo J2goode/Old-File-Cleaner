@@ -6,7 +6,7 @@ from data.olderThan import olderThan
 
 
 # List of every file and directory in Kondo folder (to protect from cleanup)
-SAFETY = ['data', 'Does Not Spark Joy']
+SAFETY = ['Old-File-Cleaner-master','data', 'Does Not Spark Joy']
 
 ## MAIN PROGRAM ##
 while True:
@@ -74,8 +74,8 @@ while True:
 
     
 
-# keeping the Does Not Spark Joy folder tabbed
-DNSJ = os.getcwd() + '\Does Not Spark Joy'
+# keeping the delete folder tabbed
+DNSJ = os.getcwd() + '\Old-File-Cleaner-master'
 
 # getting names of all protected files/ folders and stripping the "\n" from them
 if 'options' in globals():
@@ -109,7 +109,6 @@ while True:
     
     for i in paths:
         os.chdir(i)
-        print(os.getcwd())
         fName = []
         folders = []
 
