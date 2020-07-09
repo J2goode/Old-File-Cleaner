@@ -6,7 +6,7 @@ from data.olderThan import olderThan
 
 
 # List of every file and directory in Kondo folder (to protect from cleanup)
-SAFETY = ['Kondo', 'data', 'Does Not Spark Joy']
+SAFETY = ['data', 'Does Not Spark Joy']
 
 ## MAIN PROGRAM ##
 while True:
@@ -24,8 +24,6 @@ while True:
 
     oldDate = input("What date is the cutoff for an 'old file' to you?\n(Make sure to enter in mm/dd/yyyy format): ")
     print("Options Saved!")
-
-    time.sleep(2)
     break
 
 # check if these options are correct one last time
